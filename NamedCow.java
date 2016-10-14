@@ -1,8 +1,13 @@
 class NamedCow extends Cow
 {
-	protected String name;
-	public void getName(String newName)
+	protected String myName;
+	public NamedCow(String name)
 	{
-		return String newName;
+		myName = name;
 	}
+	public NamedCow()
+	{
+		myName = "unknown";
+	} 
+	public String getName() {return myName;}
 }
